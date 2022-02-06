@@ -1,8 +1,8 @@
 services:
     ubuntu:
         public: true
-        container_name: tzchz
-        image: imlala/ubuntu-xfce-vnc-novnc:latest
+        container_name: rdptest
+        image: centminmod/docker-ubuntu-vnc-desktop
         ports:
             - 6080:6080
         environment: 
