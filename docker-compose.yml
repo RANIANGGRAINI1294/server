@@ -4,9 +4,8 @@ services:
         container_name: rdptest
         image: centminmod/docker-ubuntu-vnc-desktop
         ports:
-            - 6080:6080
-        environment: 
-            - VNC_PASSWD=Masbroo77
+            - 8080:80
+        environment:
             - GEOMETRY=1280x768
             - TZ=Asia/Shanghai
             - DEPTH=24
