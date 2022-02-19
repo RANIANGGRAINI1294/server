@@ -1,7 +1,7 @@
 services:
     ubuntu:
         public: true
-        container_name: rdptest
+        container_name: server
         image: centminmod/docker-ubuntu-vnc-desktop
         ports:
             - 8080:80
