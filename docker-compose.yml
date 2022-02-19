@@ -2,7 +2,7 @@ services:
     server:
         public: true
         container_name: server
-        image: dorowu/ubuntu-desktop-lxde-vnc
+        image: centminmod/docker-ubuntu-vnc-desktop
         ports:
             - 8080:80
         environment:
@@ -14,7 +14,7 @@ services:
             - /home
         resources:
           cpu: 2000m
-          memory: 3024Mi
+          memory: 2064Mi
           storage:
-            size: 10Gi
+            size: 2Gi
             class: standard
