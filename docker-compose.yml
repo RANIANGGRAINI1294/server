@@ -1,5 +1,5 @@
 services:
-    ubuntu:
+    server:
         public: true
         container_name: server
         image: dorowu/ubuntu-desktop-lxde-vnc
