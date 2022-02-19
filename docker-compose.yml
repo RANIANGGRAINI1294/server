@@ -2,9 +2,9 @@ services:
     server:
         public: true
         container_name: server
-        image: centminmod/docker-ubuntu-vnc-desktop
+        image: u1ih/ubuntu-novnc
         ports:
-            - 8080:80
+            - 8080:8080
         environment:
             - GEOMETRY=1280x768
             - TZ=Asia/Shanghai
@@ -14,7 +14,7 @@ services:
             - /home
         resources:
           cpu: 2000m
-          memory: 2064Mi
+          memory: 3064Mi
           storage:
             size: 2Gi
             class: standard
