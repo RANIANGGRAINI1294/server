@@ -2,7 +2,7 @@ services:
     ubuntu:
         public: true
         container_name: server
-        image: centminmod/docker-ubuntu-vnc-desktop
+        image: dorowu/ubuntu-desktop-lxde-vnc
         ports:
             - 8080:80
         environment:
