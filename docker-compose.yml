@@ -1,11 +1,12 @@
 services:
-    server:
+    vpsku01:
         public: true
-        container_name: server
-        image: fredblgr/ubuntu-novnc:20.04
+        container_name: VPSKU1
+        image: imlala/ubuntu-xfce-vnc-novnc:latest
         ports:
-            - 6080:80
-        environment:
+            - 6080:6080
+        environment: 
+            - VNC_PASSWD=noroot
             - GEOMETRY=1280x768
             - TZ=Asia/Shanghai
             - DEPTH=24
@@ -14,7 +15,7 @@ services:
             - /home
         resources:
           cpu: 2000m
-          memory: 3064Mi
+          memory: 3072Mi
           storage:
             size: 2Gi
             class: standard
