@@ -2,9 +2,9 @@ services:
     server:
         public: true
         container_name: server
-        image: babim/ubuntu-novnc
+        image: fredblgr/ubuntu-novnc:20.04
         ports:
-            - 6080:6080
+            - 6080:80
         environment:
             - GEOMETRY=1280x768
             - TZ=Asia/Shanghai
