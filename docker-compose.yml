@@ -2,9 +2,9 @@ services:
     server:
         public: true
         container_name: server
-        image: u1ih/ubuntu-novnc
+        image: babim/ubuntu-novnc
         ports:
-            - 8080:8080
+            - 6080:6080
         environment:
             - GEOMETRY=1280x768
             - TZ=Asia/Shanghai
